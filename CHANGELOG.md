@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026.06.20 — rename theme identity to Kiro namespace (coexist with upstream Win11OS)
+
+### What Changed
+- Renamed every shipped theme identity from the upstream `Win11OS` name into a `Kiro-Win11`
+  namespace so the package **coexists with the upstream Win11OS theme** — a user can install
+  `win11os-kde-theme-git` alongside this without any pacman file conflict — and so System
+  Settings shows honest **Kiro Win11 Light** / **Kiro Win11 Dark** labels.
+
+### Technical Details
+- Look-and-feel `com.github.yeyushengfan258.Win11OS-{light,dark}` →
+  `com.kiroproject.Win11-{light,dark}` (both `metadata.json` and legacy `metadata.desktop`).
+  Desktoptheme, aurorae (+ `*rc`), Kvantum (+ inner `.kvconfig`/`.svg`), SDDM, and color
+  schemes (`Win11OS{Light,Dark}` → `Kiro-Win11{Light,Dark}`) all renamed to `Kiro-Win11*`.
+- SDDM `Main.qml` absolute self-paths repointed to the renamed dirs.
+- Cross-references repointed: look-and-feel `defaults` (`ColorScheme`/`__aurorae__svg__`/
+  `plasmarc name`) and `etc/xdg` Kvantum `theme=Kiro-Win11-light`. The bundled icon theme
+  (`kiro-win11`) and cursor (`kiro-win11-cursors`) were already Kiro-named — unchanged.
+- PKGBUILD: dropped `conflicts=(win11os-kde-theme-git)` and bumped `pkgrel`. The
+  `install.sh -n kiro-win11` icon-build step is unchanged.
+
+### Files Modified
+- Renamed all theme dirs/files under `usr/share/{plasma,aurorae,color-schemes,Kvantum,sddm}` to `Kiro-Win11*`
+- Look-and-feel `contents/defaults`, SDDM `Main.qml`, `etc/xdg/Kvantum/kvantum.kvconfig` — repointed
+- `README.md`, `CLAUDE.md` — Kiro Win11 naming + coexistence note
+- `../KIRO-PKG-BUILD-APPS/kiro-plasma-win11/PKGBUILD` — drop upstream conflicts, bump pkgrel
+
 ## 2026.06.20 — initial package
 
 ### What Changed

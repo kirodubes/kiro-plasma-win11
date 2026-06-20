@@ -13,9 +13,9 @@
         ],
         "EnabledByDefault": true,
         "Description": "Win11OS-light theme for kde plasma",
-        "Id": "com.github.yeyushengfan258.Win11OS-light",
+        "Id": "com.kiroproject.Win11-light",
         "License": "GPLv3",
-        "Name": "Win11OS-light",
+        "Name": "Kiro Win11 Light",
         "Website": "https://github.com/yeyushengfan258/Win11OS-light-kde"
     },
     "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",

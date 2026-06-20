@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Win11OS-dark
+Name=Kiro Win11 Dark
 Comment=Win11OS-dark theme for kde plasma
 Encoding=UTF-8
 Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
@@ -12,7 +12,7 @@ X-KDE-PluginInfo-Author=yeyushengfan258
 X-KDE-PluginInfo-Category=
 X-KDE-PluginInfo-Email=yeyushengfan258@outlook.com
 X-KDE-PluginInfo-License=GPL3.0
-X-KDE-PluginInfo-Name=com.github.yeyushengfan258.Win11OS-dark
+X-KDE-PluginInfo-Name=com.kiroproject.Win11-dark
 X-KDE-PluginInfo-Version=
 X-KDE-PluginInfo-Website=https://github.com/yeyushengfan258/Win11OS-dark-kde
 X-KDE-fallbackPackage=org.kde.breeze.desktop

@@ -1,8 +1,8 @@
 # kiro-plasma-win11 — Project Claude Instructions
 
 ## Overview
-The **Windows 11** look Plasma global theme for the Kiro Plasma edition. Ships Win11OS
-Light + Win11OS Dark as Global Themes. Sibling to [[kiro-plasma-sweet]],
+The **Windows 11** look Plasma global theme for the Kiro Plasma edition. Ships Kiro Win11
+Light + Kiro Win11 Dark as Global Themes. Sibling to [[kiro-plasma-sweet]],
 [[kiro-plasma-nord]], [[kiro-plasma-layan]], [[kiro-plasma-whitesur]].
 
 ## Current state
@@ -22,7 +22,7 @@ Light + Win11OS Dark as Global Themes. Sibling to [[kiro-plasma-sweet]],
   `ArcDusk-cursors` (light); both set to bundled `kiro-win11-cursors` (from We10XOS-cursors).
 - **Cursor is bundled static** (`usr/share/icons/kiro-win11-cursors`), unlike the icons.
 - **Drop the stray `install.sh`** that `sddm-*/6.0/*` copies into `sddm/themes/` on refresh.
-- Kvantum default → `/etc/xdg/Kvantum/kvantum.kvconfig` (`Win11OS-light`), the system XDG
+- Kvantum default → `/etc/xdg/Kvantum/kvantum.kvconfig` (`Kiro-Win11-light`), the system XDG
   layer (mirrors kiro-plasma-nord; better than /etc/skel — applies to all users incl. live ISO).
 - Mixed delivery: payload → `/usr/share`, Kvantum selection → `/etc/xdg`. PKGBUILD copies both.
 - **Test on the Plasma test box** — confirm both variants apply with kiro-win11 icons/cursors.

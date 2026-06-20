@@ -4,23 +4,26 @@
 
 # kiro-plasma-win11
 
-Kiro's **Win11** Plasma global theme — a Windows 11 look for the Kiro Plasma edition,
+Kiro's **Kiro Win11** Plasma global theme — a Windows 11 look for the Kiro Plasma edition,
 packaged as ready-to-pick Global Themes.
+
+Everything ships under a `Kiro-` namespace, so it **coexists with the upstream Win11OS
+theme** — install the real `win11os-kde-theme-git` alongside it without any file conflict.
 
 ## What it ships
 
 Global Themes you select in **System Settings → Appearance → Global Themes**:
-**Win11OS Light** and **Win11OS Dark**, each with its full set of layers:
+**Kiro Win11 Light** and **Kiro Win11 Dark**, each with its full set of layers:
 
 | Layer | Path | Notes |
 |---------------------|------------------------------------------|------------------------------|
-| Plasma desktop theme | `/usr/share/plasma/desktoptheme/Win11OS-{light,dark}` | panels, widgets, popups |
-| Global themes (look-and-feel) | `/usr/share/plasma/look-and-feel/com.github.yeyushengfan258.Win11OS-{light,dark}` | the two variants |
-| Window decorations | `/usr/share/aurorae/themes/Win11OS-{light,dark}` | Aurorae titlebars |
-| Color schemes | `/usr/share/color-schemes/Win11OS{Light,Dark}.colors` | application colours |
-| Kvantum themes | `/usr/share/Kvantum/Win11OS-{light,dark}` | Qt app styling |
-| Kvantum default selection | `/etc/xdg/Kvantum/kvantum.kvconfig` | system default (`Win11OS-light`) |
-| SDDM login themes | `/usr/share/sddm/themes/Win11OS-{light,dark}` | the login screen (Qt6) |
+| Plasma desktop theme | `/usr/share/plasma/desktoptheme/Kiro-Win11-{light,dark}` | panels, widgets, popups |
+| Global themes (look-and-feel) | `/usr/share/plasma/look-and-feel/com.kiroproject.Win11-{light,dark}` | the two variants |
+| Window decorations | `/usr/share/aurorae/themes/Kiro-Win11-{light,dark}` | Aurorae titlebars |
+| Color schemes | `/usr/share/color-schemes/Kiro-Win11{Light,Dark}.colors` | application colours |
+| Kvantum themes | `/usr/share/Kvantum/Kiro-Win11-{light,dark}` | Qt app styling |
+| Kvantum default selection | `/etc/xdg/Kvantum/kvantum.kvconfig` | system default (`Kiro-Win11-light`) |
+| SDDM login themes | `/usr/share/sddm/themes/Kiro-Win11-{light,dark}` | the login screen (Qt6) |
 | Cursors | `/usr/share/icons/kiro-win11-cursors` | bundled Windows-style cursors |
 
 **Icons:** the Win11 icon set is **bundled** (built fresh from upstream at every package
@@ -33,8 +36,8 @@ package — no external icon dependency. Already Plasma-6 native.
 sudo pacman -S kiro-plasma-win11
 ```
 
-Then open **System Settings → Appearance → Global Themes** and apply **Win11OS Light**
-or **Win11OS Dark**.
+Then open **System Settings → Appearance → Global Themes** and apply **Kiro Win11 Light**
+or **Kiro Win11 Dark**.
 
 ## Heritage
 
